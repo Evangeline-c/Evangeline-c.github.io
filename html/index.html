@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="content">
+        <div class="stars"></div>
+        <img class="bgc" src="../img/first.jpg" width="100%" alt="" />
+        <h3 class="title">欢迎来到我的个人网站</h3>
+        <h3 class="titles">今天也要加油鸭</h3>
+        <a href="second.html"
+          ><img class="icon" src="../img/lcons.jpg" alt=""
+        /></a>
+        <div class="ribbon">
+          <a href="index.html"><span>Home</span></a>
+          <a href="about.html"><span>About</span></a>
+          <a href=""><span>Form</span></a>
+        </div>
+      </div>
+      <audio autoplay="autoplay" id="audio" loop="loop">
+        <source src="../video/Proud Of You.mp3" type="audio/MP3" />
+      </audio>
+
+      <img class="music_img" src="../img/click.jpg" alt="" />
+    </div>
+  </body>
+  <script>
+    let mucics = document.getElementById('audio');
+    document.body.addEventListener(
+      'mousemove',
+      function () {
+        setTimeout(() => {
+          mucics.play();
+        }, 2000);
+      },
+      false,
+    );
+  </script>
+</html>
